@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arbil"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        android:layout_marginTop="5dp">
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="233dp"
+        android:layout_height="34dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/jugar"
+            android:onClick="juegalo"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/jugar"
+            android:onClick="Stop"
+            app:srcCompat="@android:drawable/ic_lock_silent_mode" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="322dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botonJuegoReiniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jugar"
+                android:text="REINICIAR "
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/botonJuegoSalir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jugar"
+                android:text="SALIR"
+                android:textColor="@color/white">
+
+            </Button>
+
+            <Button
+                android:id="@+id/rollbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/jugar"
+                android:text="Tirar dado"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="295dp"
+                android:layout_height="101dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/texto_puntuacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image_rightDice"
+                    android:layout_width="118dp"
+                    android:layout_height="71dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/dice1" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="90dp"
+                    android:layout_height="89dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/design_default_color_on_secondary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</LinearLayout>
